@@ -1,0 +1,9 @@
+@media(max-width: 670px) {
+    .header {
+        font-size: 24px;
+        padding: 20px 20px;
+    }
+
+    .container{
+        width: 100%;
+    }
