@@ -4,6 +4,11 @@
         padding: 20px 20px;
     }
 
+    #price, #num, #unit, #btn {
+        width: 100%;
+        margin-bottom: 5px;
+    }
     .container{
         width: 100%;
     }
+}
