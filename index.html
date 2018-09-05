@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>割り勘電卓</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-logo">割り勘計算</div>
+    </div>
+
+    <div class="container">
+        <div class="input-area">
+            <input id="price" placeholder="金額">
+            <input id="num" placeholder="人数">
+            <select id="unit">
+                <option value="10">10円単位</option>
+                <option value="100" selected>100円単位</option>
+                <option value="1000">1000円単位</option>
+            </select>
+            <div id="btn" class="disabled">計算</div>
+        </div>
+        <div class="result-area">
+            <p id="result">金額、人数、何円単位で割るかを選んで計算！</p>
+            <table border="1" id="myTable" class="hiddenTable">
+                <tr>
+                    <th></th><th>1人あたり</th><th>過不足</th>
+                </tr>
+                <tr>
+                    <td>案1</td><td id="resultPayLess"></td><td id="resultShort"></td>
+                </tr>
+                <tr>
+                    <td>案2</td><td id="resultPayMore"></td><td id="resultOver"></td>
+                </tr>
+            </table>
+            <div id="reset" class="hidden">もう一度計算する？</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
