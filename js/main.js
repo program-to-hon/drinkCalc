@@ -81,7 +81,7 @@
     num.addEventListener('keyup', checkInput);
 
     reset.addEventListener(EVENTNAME_TOUCHSTART, function(){
-        result.textContent = '金額、人数、何円単位で割るかを選んで計算！';
+        result.textContent = '金額、人数、何円単位で割るかを入れて計算ボタンをクリック！';
         price.value = '';
         num.value = '';
         unit.value = 100;
